@@ -5,13 +5,13 @@ import java.util.List;
 
 public class Courses {
 
-	private List<String> coursesList;
+	private List<Course> coursesList;
 	
 	public Courses() {
 		this.coursesList = new ArrayList<>();
-		this.coursesList.add("Hey");
-		this.coursesList.add("coucou");
-		this.coursesList.add("Est-ce que la force est présente dans ce tp ???");
+		this.coursesList.add(new Course("Hey", "cat"));
+		this.coursesList.add(new Course("coucou", "bouh"));
+		this.coursesList.add(new Course("Est-ce que la force est présente dans ce tp ???", "oui"));
 	}
 	
 	@Override
@@ -19,14 +19,19 @@ public class Courses {
 		return this.coursesList.toString();
 	}
 	
-	public void addItem(String it) {
-		this.coursesList.add(it);
+	public void addItem(String it, String qtt) {
+		this.coursesList.add(new Course(it ,qtt));
 	}
 	
 	public void deleteItem(String it) {
-		if(this.coursesList.contains(it)) {
+		System.out.println(it);
+		if(this.coursesList.contains(new Course(it, ""))) {
 			this.coursesList.remove(this.coursesList.indexOf(it));
 		}
+	}
+	
+	public List<Course> getListe() {
+		return this.coursesList;
 	}
 	
 }
