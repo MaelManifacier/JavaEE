@@ -18,6 +18,8 @@
 		for(Course course : listeCourses){%>
 				<tr>
 					<td><%= course.nom %></td>
+					<td>- - -</td>
+					<td><%= course.categorie %></td>
 					<br/>
 				</tr>
 		<%}

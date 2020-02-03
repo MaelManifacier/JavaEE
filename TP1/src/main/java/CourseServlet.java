@@ -47,8 +47,8 @@ public class CourseServlet extends HttpServlet{
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		String laCourse = request.getParameter("item");
-		String qtt = request.getParameter("quantite");
-		this.c.addItem(laCourse, qtt);
+		String categorie = request.getParameter("categorie");
+		this.c.addItem(laCourse, categorie);
 		
 		try {
 			affichageRetour(request, response);

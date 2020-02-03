@@ -68,10 +68,10 @@ glassfish : download le fichier (https://projects.eclipse.org/projects/ee4j.glas
 
 
 
- NE FONCTIONNE PAR SUR FIREFOX
+NE FONCTIONNE PAR SUR FIREFOX
 
 pour trouver route : 
-dans console administration -> deployment
+dans console administration -> deployment (mael - ...)
 ajouter le nom de la route
 genre http://127.0.0.1:8080/TP1-0.0.1-SNAPSHOT/helloWorld
 
@@ -81,3 +81,9 @@ genre http://127.0.0.1:8080/TP1-0.0.1-SNAPSHOT/helloWorld
 (intellij -> ctrl shift alt s)
 
 > quota -v / -s
+
+
+tuto jsf :
+http://www.catgovind.com/jsf/creating-first-jsf-2-2-project-in-eclipse-step-by-step-tutorial/
+
+
